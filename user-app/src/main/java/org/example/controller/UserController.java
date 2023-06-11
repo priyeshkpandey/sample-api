@@ -19,8 +19,8 @@ public class UserController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/register")
-    public void register(@RequestBody RegisterRequest registerRequest) {
-        userService.register(registerRequest.getName(), registerRequest.getEmail(), registerRequest.getPassword());
+    public @ResponseBody String register(@RequestBody RegisterRequest registerRequest) {
+        return userService.register(registerRequest.getName(), registerRequest.getEmail(), registerRequest.getPassword());
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/login")
