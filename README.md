@@ -26,6 +26,8 @@
 ## DynamoDB  
 * DynamoDB is run locally with docker
     * docker command : ```docker run -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -inMemory -sharedDb```
+* Contents in DynamoDB
+![Content in DynamoDB through API endpoints](images/UserDynamoDBContent.png "DynamoDB Content")
 
 ## Tests
 * TestNg Framework
