@@ -2,20 +2,20 @@
 ## Registration Endpoint (POST /user/register)
 * Registers a new user with name, email and password as input
 * Returns the id (primary key) of the user just created
-![User Registration API](images/UserRegister.png, "Registration API")
+![User Registration API](images/UserRegister.png "Registration API")
 
 ## Login Endpoint (POST /user/login)
 * Logs in a user
 * Returns a token after successful login
 * Returns error message for invalid user (not registered user)
-![User Login API](images/UserLogin.png, "User Login API")
+![User Login API](images/UserLogin.png "User Login API")
 
 ## Resource Endpoint (GET /user/resource)
 * Takes token returned from login endpoint as input
 * Validates the token with the existing users
 * Returns accessible content on successful token validation
 * Returns error message on failed token validation
-![Get Protected Content API](images/UserContent.png, "Get protected content")
+![Get Protected Content API](images/UserContent.png "Get protected content")
 
 # Tech Stack for the Microservice
 
